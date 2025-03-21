@@ -1,0 +1,9 @@
+<!-- templates/dashboard.html -->
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Dashboard</h1>
+<p class="lead">Welcome {{session.username}}</p>
+<p>You are now logged in</p>
+<a href="/logout" class="btn btn-danger">Logout</a>
+{% endblock %}

@@ -1,0 +1,94 @@
+<!-- templates/login.html -->
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container px-4 py-5 px-md-5 text-center text-lg-start">
+    <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+            <div class="my-5 d-flex justify-content-center">
+                <img src="assets/images/gym-logo.png" alt="Gym Logo" class="img-fluid" style="max-height: 120px;">
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="row g-3">
+                    <div class="col-4">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-dumbbell fa-2x" style="color: hsl(218, 81%, 55%);"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-heartbeat fa-2x" style="color: hsl(218, 81%, 55%);"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-running fa-2x" style="color: hsl(218, 81%, 55%);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+            <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+            <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+            <div class="card bg-glass">
+                <div class="card-body px-4 py-5 px-md-5">
+                    <h2 class="text-center mb-4">Login</h2>
+                    <form method="POST" action="">
+                        <!-- Username input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="username">Usuario</label>
+                            <input type="text" id="username" name="username" class="form-control" required />
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" class="form-control" required />
+                        </div>
+
+                        <!-- Remember me checkbox -->
+                        <div class="form-check d-flex justify-content-start mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="remember" />
+                            <label class="form-check-label" for="remember">
+                                Recuérdame
+                            </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block w-100 mb-4">
+                            Login
+                        </button>
+
+                        <!-- Register option -->
+                        <div class="text-center mb-4">
+                            <p>¿No tienes una cuenta? <a href="/register" class="text-primary fw-bold">Registrarme</a></p>
+                        </div>
+
+                        <!-- Login buttons -->
+                        <div class="text-center">
+                            <p>o ingresar con:</p>
+                            <div>
+                                <a href="#" class="social-btn">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+<!-- templates/index.html -->
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Flask Auth System</h1>
+    <p class="lead">This is a simple authentication system built with Flask and MySQL</p>
+    <hr class="my-4">
+    <p>Register or login to access the dashboard</p>
+    <a class="btn btn-primary btn-lg" href="/register" role="button">Register</a>
+    <a class="btn btn-success btn-lg" href="/login" role="button">Login</a>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+<!-- templates/index.html -->
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container px-4 py-5 px-md-5 text-center text-lg-start">
+    <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+            <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                Bienvenidos a <br />
+                <span style="color: hsl(218, 81%, 75%)">Atlas Gym</span>
+            </h1>
+            <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                Con cada repetición, estás más cerca de alcanzar tus metas.
+                ¡Tu viaje fitness comienza aquí!
+            </p>
+            <div class="d-flex flex-column flex-md-row justify-content-md-start mb-4 mb-lg-3">
+                <a href="/register" class="btn btn-primary fw-bold mb-3 mb-md-0 me-md-3 px-5 py-3">
+                    Empieza ahora
+                </a>
+                <a href="/login" class="btn btn-outline-light fw-bold px-5 py-3">
+                    Login
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+            <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+            <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+            <div class="card bg-glass">
+                <div class="card-body px-4 py-5 px-md-5">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-dumbbell fa-3x mb-3" style="color: #2a5cff;"></i>
+                                <h5>Entrenamiento de fuerza</h5>
+                                <p class="small text-muted">Instalaciones integrales de entrenamiento con pesas.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-heartbeat fa-3x mb-3" style="color: #2a5cff;"></i>
+                                <h5>Cardio Zone</h5>
+                                <p class="small text-muted">Caminadoras, bicicletas y más.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-users fa-3x mb-3" style="color: #2a5cff;"></i>
+                                <h5>Clases grupales</h5>
+                                <p class="small text-muted">Variedad de instrutores para diferentes clases.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <i class="fas fa-user-md fa-3x mb-3" style="color: #2a5cff;"></i>
+                                <h5>Entrenadores personales</h5>
+                                <p class="small text-muted">Personaliza tus rutinas de entrenamiento con entrenadores especializados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

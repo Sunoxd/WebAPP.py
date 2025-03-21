@@ -1,0 +1,69 @@
+<!-- templates/dashboard.html -->
+{% extends 'layout.html' %}
+
+{% block additional_styles %}
+<style>
+    .dashboard-card {
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    .dashboard-card:hover {
+        transform: translateY(-5px);
+    }
+    .dashboard-header {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container px-4 py-5 px-md-5">
+    <div class="dashboard-header">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="mb-0">Bienvenido, <span class="fw-bold text-primary">{{session.username}}</span></h2>
+            <a href="/logout" class="btn btn-outline-danger">
+                <i class="fas fa-sign-out-alt me-2"></i>Cerrar sesión
+            </a>
+        </div>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card bg-glass dashboard-card">
+                <div class="card-body p-4 text-center">
+                    <i class="fas fa-user-circle fa-3x mb-3" style="color: #2a5cff;"></i>
+                    <h4>Perfil</h4>
+                    <p class="text-muted">Maneja tu informacion personal</p>
+                    <a href="#" class="btn btn-primary">Editar perfil</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card bg-glass dashboard-card">
+                <div class="card-body p-4 text-center">
+                    <i class="fas fa-cog fa-3x mb-3" style="color: #2a5cff;"></i>
+                    <h4>configurar</h4>
+                    <p class="text-muted">configurar</p>
+                    <a href="#" class="btn btn-primary">configurar</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card bg-glass dashboard-card">
+                <div class="card-body p-4 text-center">
+                    <i class="fas fa-shield-alt fa-3x mb-3" style="color: #2a5cff;"></i>
+                    <h4>configurar</h4>
+                    <p class="text-muted">configurar</p>
+                    <a href="#" class="btn btn-primary">configurar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
